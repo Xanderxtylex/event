@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            color: rgb(14, 14, 76);
+            background-color: #eceff8;
+            padding: 20px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans',
+                Arial, sans-serif;
+            font-weight: bold;
+        }
+
+        .main {
+            background-color: #fefefe;
+            border-radius: 20px;
+            padding: 30px;
+            padding-bottom: 50px;
+        }
+
+        .add:hover {
+            background-color: #d5d7dd;
+            border: none;
+            border-radius: 10px;
+        }
+
+        .date-box {}
+
+        .text-box {}
+
+        .date {}
+
+        p {
+            font-size: 14px;
+        }
+
+        .add {
+            height: 30px;
+            border: none;
+            border-radius: 10px;
+            padding-left: 33px;
+            margin-top: 30px;
+            background-color: #fefefe;
+            text-align: center;
+            background-color: #e2e5ec;
+        }
+
+        input:hover {
+            /* box-shadow: 7px 3px 3px 0px rgba(96, 96, 96, 0.121); */
+            box-shadow: 0px 0px 5px 0px rgba(97, 105, 118, 0.631);
+        }
+
+        input {
+            width: 370px;
+            border-radius: 10px;
+            background-color: #e2e5ec;
+            cursor: pointer;
+
+        }
+    </style>
+</head>
+<div class="container">
+    <div class="main">
+        <h1>Events</h1>
+        <form action="userdata.php" method="POST">
+            <div class="inputs">
+                <div class="colour-box">
+                    <p>Colour</p>
+                    <input name="colour" type="text" placeholder="i.e blue...." class="colour">
+                </div>
+
+                <div class="date-box">
+                    <p>Date</p>
+                    <input name="date" type="date" class="date">
+                </div>
+                <div class="time-box">
+                    <p>Time</p>
+                    <div>
+                        <input name="time" type="time" class="time">
+
+                    </div>
+                    <div class="title-box">
+                        <p>Title</p>
+                        <input name="title" type="text" class="title" placeholder="Enter title....">
+                    </div>
+                    <div class="body-box">
+                        <p>Body</p>
+                        <input name="body" type="text" class="body" placeholder="Enter text....">
+                    </div>
+
+                    <input type="submit" value="Done" class="add">
+
+                </div>
+        </form>
+
+    </div>
+</div>
+</body>
+
+</html>
